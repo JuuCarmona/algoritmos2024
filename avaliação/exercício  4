@@ -1,0 +1,24 @@
+# Criar vetor para tradução de português e Inglês
+port = ["como", "oi", "bonito", "azul"]
+ing = ["how", "hello", "beatiful", "blue"]
+
+# Pedir uma frase em inglês
+f = input("Digite uma frase in english: ")      
+# Dividir essa frase por palavras
+p = f.split()                                   
+
+# Traduzir as palavras
+# Declarar tradução como lista
+traducao = []               
+ # Para cada "Palavra" em palavras(p)
+ # se a palavra estar em ingles
+for palavra in p:                          
+    if palavra in ing:                  
+        # Tradução "puxa" o equivalente em portugues e verifica se há a tradução em ingles, para substitui-lo
+        traducao.append(port[ing.index(palavra)])  
+        # se não
+    else:                    
+        # Mantém a palavra em inglês               
+        traducao.append(palavra)                   
+# Mostrar frase depois de traduzida
+print (" ".join(traducao)) 
