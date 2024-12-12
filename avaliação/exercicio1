@@ -1,0 +1,10 @@
+# Pede uma string ao usuário
+string = input("Digite uma string: ")  
+# Cria uma variável para armazenar a string invertida
+inverter = ""                        
+# Passa a string de trás para frente    
+for i in range(len(string) -1, -1, -1): 
+    # Incrementa (inverter)
+    inverter += string[i]
+    # Mostra o inverso da string
+print(inverter)                               
