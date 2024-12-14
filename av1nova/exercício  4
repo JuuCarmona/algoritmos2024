@@ -1,0 +1,33 @@
+cadastros = []
+
+# Definindo a função 
+def cadastro():
+    # Pedir o nome ao usuário
+    nome = input("Digite seu nome: ")
+
+    # Pedir o número ao usuário
+    numero = input("Digite seu número: ")
+
+    # Pedir o e-mail ao usuário
+    email = input("Digite seu e-mail: ")
+
+    # Retorna os dados
+    return {"nome": nome, "numero": numero, "email": email}
+
+# Laço de repetição para continuar coletando dados
+while True:
+    # Perguntar se o usuário quer continuar
+    print("\nDigite 0 para interromper ou qualquer outro número para continuar.")
+    escolha = input("Deseja cadastrar uma nova pessoa? ")
+
+    # Se o usuário digitar 0, o laço é interrompido
+    if escolha == "0":
+        break
+
+    # Armazenar o resultado
+    cadastros.append(cadastro())
+
+# Exibir todos os cadastros realizados
+print("\nLista de cadastros:")
+for cadastro_info in cadastros:
+    print(cadastro_info)
