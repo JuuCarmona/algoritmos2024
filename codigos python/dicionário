@@ -1,0 +1,14 @@
+informacao = {"nome":"anne","idade" : 19 , "cidade" : "lisboa"}
+
+informacao["idade"] = 23
+informacao['profissao'] = 'engenheiro'
+del informacao['cidade']
+
+numeros_quadrados = {x: x**2 for x in range(1,6)}
+print(numeros_quadrados)
+
+jogos = {'volei','futebol','futebol','hugby','hoquei','basquete'}
+if 'volei' in jogos:
+    print('a chave volei existe em jogos')
+else:
+    print("nao existe nenhuma chave dessa em jogos")
