@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# binários de C
+*.o
+*.out
+*.exe
+
+.vscode/
+.idea/
+.DS_Store
